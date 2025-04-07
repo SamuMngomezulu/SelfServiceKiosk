@@ -12,14 +12,14 @@ namespace SelfServiceKiosk.Models
 
         [Required]
         [MaxLength(100)]
-        public string Name { get; set; } = string.Empty;
+        public string ProductName { get; set; } = string.Empty;
 
-        public string? Description { get; set; }
+        public string? ProductDescription { get; set; }
 
         [Required]
         [Column(TypeName = "decimal(18,2)")]
         [Range(0, double.MaxValue)]
-        public decimal Price { get; set; }
+        public decimal ProductPrice { get; set; }
 
         [MaxLength(50)]
         public string? Category { get; set; }

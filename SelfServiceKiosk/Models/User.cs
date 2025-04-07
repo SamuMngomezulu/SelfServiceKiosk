@@ -31,6 +31,15 @@ namespace SelfServiceKiosk.Models
 
         public bool IsActive { get; set; } = true;
 
+
+        [Required]
+        [MaxLength(50)]
+        public string FirstName { get; set; } = string.Empty;
+
+        [Required]
+        [MaxLength(50)]
+        public string LastName { get; set; } = string.Empty;
+
         // Navigation properties
         public virtual ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
         public virtual ICollection<Order> Orders { get; set; } = new List<Order>();

@@ -1,0 +1,31 @@
+# Build Folders
+bin/
+obj/
+Debug/
+Release/
+
+# Visual Studio Files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider and VS Code
+.idea/
+.vscode/
+
+# Logs and Cache
+*.log
+*.cache
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Databases
+*.db
+
+# Publish output
+publish/
+
